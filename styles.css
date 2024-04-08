@@ -1,0 +1,259 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Center align header and footer */
+header,
+footer {
+    text-align: center;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    background-color: #a39e9e;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    position: relative;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: #bdb8b8;
+}
+
+nav ul li:hover>ul {
+    display: block;
+    background-color: #555;
+}
+
+.dropdown-menu {
+    background-color: #f7efef;
+}
+
+
+.dropdown-item {
+    background-color: #f7efef;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item a {
+    color: steelblue;
+}
+
+.dropdown-item:hover {
+    background-color: #555;
+}
+
+/* Style the offers section */
+.offers {
+    border: 2px solid steelblue;
+    text-align: center;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes slideshow {
+
+    0%,
+    20% {
+        opacity: 0;
+    }
+
+    25%,
+    45% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.offers img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    animation: slideshow 12s infinite;
+}
+
+.offers img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.offers img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.offers img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+/* Style the product sections */
+@keyframes sectionSlide {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10%,
+    90% {
+        transform: translateY(-100%);
+    }
+}
+
+.product-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 2;
+}
+
+.product {
+    display: inline-block;
+    background-color: #f9f9f9;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 150px;
+    height: 100px;
+    transition: transform 0.3s;
+    padding: 0%;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    flex-grow: 1;
+    background-color: #f5f0f0;
+    height: 200px;
+    width: 200px;
+}
+
+.product-info h5 {
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+.product-info p {
+    margin-top: 0;
+    margin-bottom: 1px;
+    color: steelblue;
+    font-size: small;
+}
+
+button {
+    background-color: #f5f0f0;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: orange;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 5px
+}
+
+button:hover {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+}
+
+.add-to-cart {
+    background-color: #f5f0f0;
+    width: 120px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: orange;
+    border: 1px solid steelblue;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: steelblue;
+    border-color: rgb(250, 234, 230);
+    color: rgb(250, 234, 230);
+}
+
+.added-to-cart {
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 5px
+}
+
+.product-section:nth-child(1) {
+    animation: sectionSlide 15s linear infinite;
+}
+
+.product-section:nth-child(2) {
+    animation: sectionSlide 15s linear infinite 5s;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="LabTest.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-column">
+            <form class="lab-test-form">
+                <fieldset>
+                    <legend>1. Your Contact Details</legend>
+                    <div class="form-group">
+                        <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                        <input type="text" id="patient-id" name="patient-id" placeholder="Patient ID">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="contact-number" name="contact-number" placeholder="Contact Number"
+                            required>
+                        <input type="email" id="email" name="email" placeholder="Email ID" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Address</legend>
+                    <div class="form-group">
+                        <input type="text" id="house-number" name="house-number" placeholder="House Number" required>
+                        <input type="text" id="street" name="street" placeholder="Street">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="area" name="area" placeholder="Area" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="district" name="district" required>
+                            <option value="" selected disabled>Select District</option>
+                            <option value="district1">District 1</option>
+                            <option value="district2">District 2</option>
+                            <option value="district3">District 3</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>3. Choose the Test Type</legend>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="cbc" name="test-type" value="cbc">
+                        <label for="cbc">CBC</label>
+                        <input type="checkbox" id="complete-urine" name="test-type" value="complete-urine">
+                        <label for="complete-urine">Complete Urine</label>
+                        <input type="checkbox" id="lipid-profile" name="test-type" value="lipid-profile">
+                        <label for="lipid-profile">Lipid Profile</label>
+                    </div>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="tsh" name="test-type" value="tsh">
+                        <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+                        <input type="checkbox" id="glucose-test" name="test-type" value="glucose-test">
+                        <label for="glucose-test">Glucose Test</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>4. Do you want a hard copy of the report also?</legend>
+                    <div class="form-group-checkbox">
+                        <input type="radio" id="yes" name="report-copy" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="report-copy" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>5. Select Your Comfortable Date and Time</legend>
+                    <div class="form-group-checkbox">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group-checkbox">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div>
+            <img src="Images/Lab-Test/lab-test.jpg" alt="Right Image" class="fixed-image">
+        </div>
+    </div>
+</body>
+
+</html>

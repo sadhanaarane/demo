@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* Include padding in the width */
+}
+
+.form-column {
+    flex: 1;
+    /* Take up equal space */
+    padding-right: 20px;
+    /* Add spacing between columns */
+    box-sizing: border-box;
+    /* Include padding in the width */
+}
+
+.lab-test-form {
+    width: 50%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+}
+
+
+.lab-test-form input {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.lab-test-form select {
+    display: inline-block;
+    width: calc(50% - 5px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-color: darkgrey;
+    color: gray;
+}
+
+.fixed-image {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 900px;
+    max-width: 50%;
+    min-width: 200px;
+    z-index: 1000;
+    align-self: flex-start;
+    padding-left: 0%;
+    margin-left: 0;
+}
+
+.lab-test-form fieldset {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.lab-test-form .form-group {
+    display: flex;
+}
+
+.lab-test-form .form-group input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.lab-test-form .form-group input:last-child {
+    margin-right: 0;
+}
+
+.lab-test-form .form-group-checkbox {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.lab-test-form input[type="checkbox"],
+.lab-test-form input[type="radio"],
+.lab-test-form input[type="date"],
+.lab-test-form input[type="time"] {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+.lab-test-form label {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: gray;
+    font-size: small;
+    font-weight: normal;
+}
+
+.lab-test-form input[type="reset"],
+.lab-test-form input[type="submit"] {
+    display: inline-block;
+    background-color: plum;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.lab-test-form input[type="reset"]:hover,
+.lab-test-form input[type="submit"]:hover {
+    background-color: darkorchid;
+}
